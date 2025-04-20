@@ -7,27 +7,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    
+    <script src="Src/src.js"></script>
     <link rel="icon" href="Assets/logo.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F0F4FF]">
-    <header class="flex justify-around  items-center  border-b border-[#0F172A]">
-       <div class="">
-            <img src="Assets/logo.png" alt="logo" class="w-25 h-25">
+<body class="bg-[#F0F4FF] p-0  m-0">
+    <header class="flex justify-between  items-center  border-b border-[#0F172A] py-[10px] px-[35px] sticky">
+       <div class="flex items-center gap-10">
+            <img src="Assets/logo.png" alt="logo" class="w-20 h-20">
+            <h1 class="text-[32px] ">Codezinho</h1>
        </div>
 
-       <nav class="flex justify-center text-center gap-10">
+        <nav class="flex justify-center text-center gap-10 items-center">
             <a href="" class="text-[24px]">Home</a>
             <a href="" class="text-[24px]">Sobre</a>
             <a href="" class="text-[24px]">Novidades</a>
+
+            <!-- Botão de tema -->
+            <button id="theme-toggle" class="text-[24px] p-2 rounded-md border border-gray-500 bg-gray-700  hover:bg-gray-200 dark:hover:bg-gray-800 transition">
+                🌙
+            </button>
         </nav>
     </header>
 
 
-    <main class="">
 
+    <!-- Parte principal do blog -->
+    <main class="mx-auto px-4 pb-12 py-20">
+
+        <!-- Parte do banner do projeto -->
+        <div class="flex justify-between px-40 items-center mb-20">
+            <div class="justify-center ">
+                <h1 class="text-[52px] tracking-tight">Blog<br>Codezinho</h1>
+                <p class="text-[#1E3A8A] text-[20px] tracking-wider">Descobrindo além do código</p>
+            </div>
+          
+            <div class="flex justify-center items-center">
+                <img src="Assets/logo.png" alt="logo">
+            </div>
+        </div>
+
+        <!-- Parte das seções do blog -->
+        <section class="mb-30">
+            <h2 class="text-[42px] text-[#1E3A8A] font-semibold mb-3">Linguagens</h2>
+            <p  class="tracking-wide mb-10 text-[20px]">Está começando agora? Conheça algumas linguagens com as quais talvez você queira trabalhar.</p>
+            
+            <div class="flex gap-40 items-center justify-between">
+
+                <div class="w-sm"> 
+                    <img src="Assets/js.webp" alt="Java Script" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p  class="text-2x1  text-gray-800">Linguagem usada para deixar sites interativos e dinâmicos. Essencial no front-end.</p>
+                </div>
+                    
+                <div class="w-sm"> 
+                    <img src="Assets/py.webp" alt="Python" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Fácil de aprender e muito usada em automação, dados e inteligência artificial.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/C++.png" alt="C++" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Linguagem rápida e poderosa, ideal para jogos, sistemas e performance avançada.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/reactJS.webp" alt="React JS" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Biblioteca JavaScript focada em criar interfaces modernas e reutilizáveis.</p>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section class="mb-30">
+            <h2 class="text-[42px] text-[#1E3A8A] font-semibold mb-3">Trabalhos</h2>
+            <p  class="tracking-wide mb-10 text-[20px]">Está começando agora? Conheça algumas linguagens com as quais talvez você queira trabalhar.</p>
+            
+            <div class="flex gap-40 items-center justify-between">
+
+                <div class="w-sm"> 
+                    <img src="Assets/js.webp" alt="Java Script" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p  class="text-2x1  text-gray-800">Linguagem usada para deixar sites interativos e dinâmicos. Essencial no front-end.</p>
+                </div>
+                    
+                <div class="w-sm"> 
+                    <img src="Assets/py.webp" alt="Python" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Fácil de aprender e muito usada em automação, dados e inteligência artificial.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/C++.png" alt="C++" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Linguagem rápida e poderosa, ideal para jogos, sistemas e performance avançada.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/reactJS.webp" alt="React JS" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Biblioteca JavaScript focada em criar interfaces modernas e reutilizáveis.</p>
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section class="mb-30">
+            <h2 class="text-[42px] text-[#1E3A8A] font-semibold mb-3">Novidades no mercado</h2>
+            <p  class="tracking-wide mb-10 text-[20px]">Está começando agora? Conheça algumas linguagens com as quais talvez você queira trabalhar.</p>
+            
+            <div class="flex gap-40 items-center justify-between">
+
+                <div class="w-sm"> 
+                    <img src="Assets/js.webp" alt="Java Script" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p  class="text-2x1  text-gray-800">Linguagem usada para deixar sites interativos e dinâmicos. Essencial no front-end.</p>
+                </div>
+                    
+                <div class="w-sm"> 
+                    <img src="Assets/py.webp" alt="Python" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Fácil de aprender e muito usada em automação, dados e inteligência artificial.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/C++.png" alt="C++" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Linguagem rápida e poderosa, ideal para jogos, sistemas e performance avançada.</p>
+                </div>
+                
+                <div class="w-sm"> 
+                    <img src="Assets/reactJS.webp" alt="React JS" class="w-[230px] h-[200px] mx-auto mb-5">
+                    <p class="text-2x1 text-gray-800">Biblioteca JavaScript focada em criar interfaces modernas e reutilizáveis.</p>
+                </div>
+                
+            </div>
+            
+        </section>
     </main>
+
+    <footer></footer>
 </body>
 </html>
